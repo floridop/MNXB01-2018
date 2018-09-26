@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO">Español (Colombia)</option><option value="fr-FR" selected="selected">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">commit to it</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "fr-FR"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Défis</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Cr&#xE9;ez un fichier dans votre nouveau r&#xE9;f&#xE9;rentiel, ajoutez quelque chose &#xE0; ce fichier et suivez-lz avec Git.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Commits</h2>
+    <p>Les commits sont essentiels &#xE0; l&apos;utilisation de Git. Ce sont les moments o&#xF9; vous enregistrez et d&#xE9;crivez le 
+    travail que vous avez accompli. Ils sont les instants clefs dans la chronologie de l&apos;historique du projet.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Cr&#xE9;er un nouveau fichier</h3>
+    <p>Maintenant que vous avez un r&#xE9;f&#xE9;rentiel commenc&#xE9;, ajoutez-y un fichier.</p>
+    <p>Ouvrez votre &#xE9;diteur de texte et cr&#xE9;ez un nouveau fichier vide. Maintenant, &#xE9;crivez un peu de texte, tapez peut-&#xEA;tre &quot;Bonjour!&quot;, et
+        enregistrez le fichier sous &#xAB;readme.txt&#xBB; dans le dossier &#xAB;hello-world&#xBB; que vous avez cr&#xE9;&#xE9; lors du pr&#xE9;c&#xE9;dent d&#xE9;fi.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>V&#xE9;rifier l&apos;&#xE9;tat + ajouter et soumettre les modifications</h3>
+    <p>Ensuite, v&#xE9;rifiez le <strong> statut </strong> de votre d&#xE9;p&#xF4;t pour savoir s&apos;il y a eu des changements. Vous savez que vous avez chang&#xE9; quelque chose , mais Git le sait-il aussi ?</p>
+
+    <p>Assurez-vous que vous &#xEA;tes toujours dans votre r&#xE9;pertoire &#xAB;hello-world&#xBB; lorsque vous ex&#xE9;cutez ces commandes. Utilisez maintenant Git pour voir ce qui a chang&#xE9; dans votre d&#xE9;p&#xF4;t:</p>
+
+    <p>Tout d&apos;abord, v&#xE9;rifiez le statut:</p>
+    <p><code class="shell">git status</code></p>
+    <p>Git devrait vous dire qu&apos;un fichier a &#xE9;t&#xE9; ajout&#xE9;.</p>
+
+    <p>Puis <strong>ajouter</strong> le fichier que vous venez de cr&#xE9;er afin qu&apos;il devienne une partie des modifications que vous <strong>soumettez </strong> avec Git: </p>
+    <p><code class="shell">git add readme.txt</code></p>
+
+    <p>Enfin, <strong>soumettez (commit)</strong> ces modifications &#xE0; l&apos;historique du d&#xE9;p&#xF4;t avec un court (m) message 
+    d&#xE9;crivant les mises &#xE0; jour.</p>
+    
+    <p><code class="shell">git commit -m &quot;Cr&#xE9;ation du fichier readme&quot;</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>&#xC9;tape: Effectuez plus de modifications</h3>
+    <p>Ajoutez une autre ligne au fichier &quot;readme.txt&quot; et enregistrez le fichier &#xE0; nouveau.</p>
+
+    <p>Dans le terminal, vous pouvez afficher les <strong>diff&#xE9;rences</strong> entre le fichier actuel et la derni&#xE8;re version soumise.</p>
+
+    <p>Dites &#xE0; Git de vous afficher le <strong>diff</strong>:</p>
+    <p><code class="shell">git diff</code></p>
+
+    <p>Maintenant, avec ce que vous venez d&apos;apprendre ci-dessus, soumettez ces derniers changements.</p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="select-directory">S&#xC9;LECTIONNER UN R&#xC9;PERTOIRE</button>
+    <button class="btn-white" id="verify-challenge">V&#xC9;RIFIER</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <span id="path-required-warning">S&#xE9;lectionner le dossier contenant votre d&#xE9;p&#xF4;t.</span>
+    <span id="directory-path"></span>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Effacer le statut termin&#xE9;</button>
+</div>
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>V&#xE9;rifiez l&apos;&#xE9;tat des modifications dans un d&#xE9;p&#xF4;t</strong></li>
+        <li><code class="shell">git status</code></li>
+        <li><strong>Afficher les modifications apport&#xE9;s aux fichiers</strong></li>
+        <li><code class="shell">git diff</code></li>
+        <li><strong>Ajouter les modifications d&apos;un fichier &#xE0; soumettre</strong></li>
+        <li><code class="shell">git add &lt;FILENAME&gt;</code></li>
+        <li><strong>Pour ajouter toutes les modifications d&apos;un seul coup</strong></li>
+        <li><code class="shell">git add .</code></li>
+        <li><strong> Pour soumettre les modifications que vous avez ajout&#xE9;es avec un court message d&#xE9;crivant les modifications</strong>
+        </li>
+        <li><code class="shell">git commit -m &quot;your commit message&quot;</code></li>
+        <ul>
+</ul></ul></div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="repository.html" class="u-inline-block all-caps">repository
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="githubbin.html" class="u-inlineBlock all-caps">GitHubbin
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'commit_to_it'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO" selected="selected">Español (Colombia)</option><option value="fr-FR">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">requesting you pull please</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "es-CO"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Retos</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Enviar una solicitud de aceptaci&#xF3;n de tus cambios (Pull Request) al repositorio original Patchwork.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Pull Requests</h2>
+    <p>Frecuentemente, cu&#xE1;ndo haces cambios y mejoras a un proyecto que has bifurcado, vas a querer enviar esos cambios a los
+        encargados de mantener el repositorio original y <strong>solicitarles (request)</strong> que <strong>halen (pull)</strong> esos cambios
+        al original para que aquellos que lo usan se puedan beneficiar de las actualizaciones, eso es un <strong>pull request</strong>.</p>
+
+    <p>Queremos a&#xF1;adirte a la lista de personas que finalizaron este taller, as&#xED; que crea un <strong>pull request</strong> para a&#xF1;adir
+        tu archivo con tu usuario al repositorio original: <a href="https://github.com/jlord/patchwork" target="_blank">github.com/jlord/patchwork</a>.
+    </p>
+
+    <img src="../../../assets/imgs/pullrequest.png" width="100%" alt="An illustration showing two options. The latter option contains more of the alphabet than the first and is asking the first to accept its work so that the alapabet is complete.">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Crear un pull request</h3>
+    <p>Visita el repositorio original que bifurcaste en GitHub, en este caso <a href="https://github.com/jlord/patchwork">http://github.com/jlord/patchwork</a>.
+    </p>
+
+    <p>GitHub detectar&#xE1; con frecuencia si has enviado (push) una branch a un fork y lo mostrar&#xE1; en la parte superior de la pa&#x1F5;ina del repositorio original.
+        Si puedes ver que con tu rama &apos;add-username&apos;, puedes hacer click en &apos;Crear pull request&apos; (create a Pull Request) desde all&#xED;. Si no:</p>
+
+    <ul>
+        <li>Haz Click en el bot&#xF3;n verde que dice &apos;New pull request&apos;.</li>
+        <li>Selecciona la rama que tiene los cambios que quieres enviar. Deber&#xED;a ser la que se llama &apos;add-yourusername&apos;.</li>
+    </ul>
+
+    <p>Ahora ver&#xE1;s una p&#xE1;gina con los detalles que est&#xE1;n en el proceso de ser enviados. Esta p&#xE1;gina muestra
+        los commits los cambios, en el formulario de diff, asociando el pull request y comparandolo con la rama &apos;gh-pages&apos;
+        de el original.</p>
+
+    <p>Si el repositorio original tiene <strong>documentaci&#xF3;n de contribuci&#xF3;n</strong>, GitHub lo enlazar&#xE1;. Esta es 
+        la documentaci&#xF3;n que los propietarios del repositorio consideran c&#xF3;mo es la mejor manera de hacer contribuciones a ese proyecto &#x2014;Es de gran ayuda leer si
+        quisieras saber si tus cambios ser&#xE1;n adoptados!</p>
+
+    <p>Si todo en la p&#xE1;gina se ve bien y es lo que esperabas:</p>
+
+    <ul>
+        <li>Click en &apos;Create pull request&apos;</li>
+        <li>A&#xF1;ade un t&#xED;tulo y una descripci&#xF3;n a los cambios que han sugerido al autor del repositorio original para ser incorporados.</li>
+        <li>Haz Click en &apos;Send pull request&apos;!</li>
+    </ul>
+
+    <p><strong>Bingo! Enviaste un pull request &#x2014; tomate unos segundos para disfrutar el momento.</strong>
+
+    </p><p>Si todo est&#xE1; bien con tu pull request, ser&#xE1; fusionado en unos momentos. Si no est&#xE1; automaticamente fusionado despu&#xE9;s de unos poco minutos, 
+        entonces tendr&#xE1;s algunos comentarios que te hizo @reporobot explicando por qu&#xE9; no los pudo fusionar (merge). Si este es el
+        caso, cierra tu pull request en GitHub, haz los cambios necesarios en tu rama, vuelve a enviar los cambios a tu fork
+        y reabre (esto le avisar&#xE1; @reporobot para que revise nuevamente) tu pull request.</p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="verify-challenge">VERIFY</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="pull_never_out_of_date.html" class="u-inline-block all-caps">pull never out of date
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="merge_tada.html" class="u-inlineBlock all-caps">merge tada
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'requesting_you_pull_please'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

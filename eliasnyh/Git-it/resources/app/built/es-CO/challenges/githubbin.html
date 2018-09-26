@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO" selected="selected">Español (Colombia)</option><option value="fr-FR">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">GitHubbin</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "es-CO"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Retos</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Crea una cuenta de GitHub y agrega tu nombre de usuario a la configuraci&#xF3;n de Git.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Trabaja mejor, Juntos</h2>
+
+    <p>El repositorio que has creado solamente existe en tu computadora, que es &#xFA;til, pero hace que sea bastante dif&#xED;cil compartir
+        y trabajar con otros. No te preocupes, para eso est&#xE1; GitHub!</p>
+
+    <p>GitHub es un sitio web que permite a personas de cualquier lugar subir el c&#xF3;digo que tienen en Git para que cualquier otra persona pueda
+        f&#xE1;cilmente trabajar en conjunto en el mismo proyecto. GitHub act&#xFA;a c&#xF3;mo el repositorio central para que t&#xFA; y otras personas
+        compartan. T&#xFA; empujas (push) tus cambios a Github y puedes halar (pull) los cambios que han hecho otras personas.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Crea una cuenta de GitHub</h3>
+
+    <p>Visita <a href="http://github.com" target="_blank">github.com</a> y registra una cuenta gratuita. <strong>Choca esos
+        cinco, bienvenido!</strong></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Agrega el nombre de usuario de GitHub a Git</h3>
+    <p>Agraga tu nombre de usuario de GitHub a t&#xFA; configuraci&#xF3;n local de Git. Haremos esto solo por el bien de Git-it; ya que hace m&#xE1;s f&#xE1;cil
+        verificar los pr&#xF3;ximos retos. Guarda exactamente el nombre de usuario que creaste en GitHub y <strong>pon las may&#xFA;sculas
+            donde las haya</strong>. Nota, no necesitas ingresar los s&#xED;mbolos &quot;&lt;&quot; y &quot;&gt;&quot;.</p>
+
+    <p>A&#xF1;ade tu nombre de usuario de GitHub configuraci&#xF3;n de Git:</p>
+    <code class="shell">git config --global user.username &lt;USerNamE&gt;</code>
+
+    <p>Puedes verificar lo que acabas de ingresar en tu configuraci&#xF3;n de Git escribiendo:</p>
+    <code>git config --global user.username</code>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="verify-challenge">VERIFY</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+</div>
+
+<div class="chal-tip grey-border border-box">
+    <p>Asgurate de escribir &quot;<strong>user.username</strong>&quot; arriba y no &quot;user.name&quot;, que puede sobre escribir lo que hiciste
+        en el primer reto y dejarte sin configurar correctamente tu nombre de usuario (username)! Si te das cuenta que lo hiciste, est&#xE1; bien, s&#xF3;lo
+        repite el paso del primer reto para agregar tu nombre y completar el paso anterior.</p>
+</div>
+
+<div class="chal-no-pass grey-border border-box">
+    <h4>Si los nombres de usuario de GitHub y Git no coindiden en la configuraci&#xF3;n</h4>
+
+    <p>Un error com&#xFA;n es que el usuario de GitHub no coincida con las may&#xFA;sculas del que configuraste en  <code>git config</code>.
+        por ejemplo, &apos;JLord&apos; no es lo mismo que &apos;jlord&apos;</p>
+    <p>Para cambiar el nombre de usuario en Git, s&#xF3;lo ejecuta el comando que pusiste a correr antes, pero con las letras
+        may&#xFA;sculas en el lugar correcto:</p>
+    <p><code class="shell">git config --global user.username &lt;USerNamE&gt;</code></p>
+    <p>Cu&#xE1;ndo hayas hecho las correcciones, verifica nuevamente!</p>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="commit_to_it.html" class="u-inline-block all-caps">commit to it
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="remote_control.html" class="u-inlineBlock all-caps">remote control
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'githubbin'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

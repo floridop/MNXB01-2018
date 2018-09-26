@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR" selected="selected">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO">Español (Colombia)</option><option value="fr-FR">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">commit to it</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "ko-KR"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Challenges</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+  <p>&#xB2F9;&#xC2E0;&#xC758; &#xC0C8; &#xC800;&#xC7A5;&#xC18C;(repository)&#xC5D0; &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xBCF4;&#xC138;&#xC694;. Git&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xD30C;&#xC77C;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xACE0;(add) &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xB4E4;&#xC744; &#xCEE4;&#xBC0B;(commit)&#xD558;&#xC138;&#xC694;.</p>
+
+</div>
+
+<div class="chal-background light-blue solid-box">
+  <h2>&#xCEE4;&#xBC0B;(commit)</h2>
+  <p>&#xCEE4;&#xBC0B;&#xC740; Git&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xB370; &#xC788;&#xC5B4; &#xAC00;&#xC7A5; &#xC911;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. &#xCEE4;&#xBC0B;&#xB4E4;&#xC740; &#xB2F9;&#xC2E0;&#xC774; &#xC791;&#xC5C5;&#xD588;&#xB358; &#xAC83;&#xB4E4;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xACE0; &#xC124;&#xBA85;&#xD558;&#xB294; &#xC21C;&#xAC04;&#xB4E4;&#xC785;&#xB2C8;&#xB2E4;. &#xCEE4;&#xBC0B;&#xB4E4;&#xC740; &#xB2F9;&#xC2E0;&#xC758; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC774;&#xB825;&#xC758; &#xCCB4;&#xD06C;&#xD45C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+  <h3>&#xC0C8; &#xD30C;&#xC77C; &#xB9CC;&#xB4E4;&#xAE30;</h3>
+
+  <p>&#xC774;&#xC81C; &#xB2F9;&#xC2E0;&#xC740; &#xC800;&#xC7A5;&#xC18C;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xC800;&#xC7A5;&#xC18C;&#xC5D0; &#xD30C;&#xC77C;&#xC744; &#xCD94;&#xAC00;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+  <p>&#xD14D;&#xC2A4;&#xD2B8; &#xD3B8;&#xC9D1;&#xAE30;&#xB97C; &#xC5F4;&#xACE0; &#xC0C8;&#xB85C;&#xC6B4; &#xBE48; &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4DC;&#xC138;&#xC694;. &quot;Hello!&quot; &#xAC19;&#xC740; &#xD14D;&#xC2A4;&#xD2B8;&#xB97C; &#xC801;&#xC5B4;&#xBCF4;&#xACE0; &#xC9C0;&#xB09C; &#xCC4C;&#xB9B0;&#xC9C0;&#xC5D0;&#xC11C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB358; &apos;hello-world&apos;&#xD3F4;&#xB354;&#xC5D0; &apos;readme.txt&apos;&#xB77C;&#xB294; &#xC774;&#xB984;&#xC758; &#xD30C;&#xC77C;&#xB85C; &#xC800;&#xC7A5;&#xD558;&#xC138;&#xC694;.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+  <h3>&#xC0C1;&#xD0DC;(status) &#xD655;&#xC778;&#xD558;&#xAE30; + &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xB4E4;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xACE0;(add) &#xCEE4;&#xBC0B;&#xD558;&#xAE30;(commit)</h3>
+  <p>&#xB2E4;&#xC74C;&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC774; &#xC788;&#xB294;&#xC9C0; &#xC544;&#xB2CC;&#xC9C0;&#xB97C; &#xC54C;&#xC544;&#xBCF4;&#xAE30; &#xC704;&#xD574; &#xB2F9;&#xC2E0;&#xC758; &#xC800;&#xC7A5;&#xC18C;&#xC758; <strong>&#xC0C1;&#xD0DC;</strong> &#xB97C; &#xD655;&#xC778;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;. &#xB2F9;&#xC2E0;&#xC740; &#xC5B4;&#xB5A4; &#xAC83;&#xB4E4;&#xC774; &#xBC14;&#xB00C;&#xC5C8;&#xB294;&#xC9C0; &#xC54C;&#xACE0; &#xC788;&#xC9C0;&#xB9CC; Git&#xB3C4; &#xC54C;&#xACE0; &#xC788;&#xC744;&#xAE4C;&#xC694;?</p>
+
+  <p>&#xC774; &#xBA85;&#xB839;&#xC5B4;&#xB4E4;&#xC744; &#xC2E4;&#xD589;&#xD560; &#xB54C; &apos;hello-world&apos; &#xD3F4;&#xB354; &#xB0B4;&#xC5D0;&#xC11C; &#xC2E4;&#xD589;&#xD558;&#xACE0; &#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xC138;&#xC694;. &#xB2F9;&#xC2E0;&#xC758; &#xC800;&#xC7A5;&#xC18C;&#xC5D0;&#xC11C; &#xBCC0;&#xACBD;&#xB41C; &#xAC83;&#xB4E4;&#xC744; &#xBCF4;&#xAE30; &#xC704;&#xD574; Git&#xC744; &#xC0AC;&#xC6A9;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;:</p>
+
+  <p>&#xBA3C;&#xC800;, &#xC0C1;&#xD0DC;&#xB97C; &#xD655;&#xC778;&#xD558;&#xC138;&#xC694;:</p>
+  <p><code class="shell">git status</code></p>
+  <p>Git&#xC740; &#xB2F9;&#xC2E0;&#xC5D0;&#xAC8C; &#xCD94;&#xAC00;&#xB41C; &#xD30C;&#xC77C;&#xC744; &#xC54C;&#xB824;&#xC904; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+
+  <p>&#xADF8; &#xB2E4;&#xC74C;&#xC5D0; Git&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; <strong>&#xCEE4;&#xBC0B;</strong> (aka save)&#xD560; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xB4E4;&#xC758; &#xC77C;&#xBD80;&#xB85C; &#xB9CC;&#xB4E4;&#xAE30; &#xC704;&#xD574;, &#xBC29;&#xAE08; &#xB9CC;&#xB4E0; &#xD30C;&#xC77C;&#xC744; <strong>&#xCD94;&#xAC00;</strong> &#xD574;&#xC8FC;&#xC138;&#xC694;:</p>
+  <p><code class="shell">git add readme.txt</code></p>
+
+  <p>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C;, &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xB41C; &#xB0B4;&#xC6A9;&#xC5D0; &#xB300;&#xD574; &#xC124;&#xBA85;&#xD55C; &#xC9E7;&#xC740; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xC5EC; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xB4E4;&#xC744; &#xC800;&#xC7A5;&#xC18C;&#xC758; &#xC774;&#xB825;&#xC5D0; <strong>&#xCEE4;&#xBC0B;</strong>&#xD558;&#xC138;&#xC694;:</p>
+  <p><code class="shell">git commit -m &quot;Created readme&quot;</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+  <h3>&#xB354; &#xB9CE;&#xC740; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D; &#xB9CC;&#xB4E4;&#xAE30;</h3>
+  <p>&apos;readme.txt&apos;&#xC5D0; &#xB2E4;&#xB978; &#xB77C;&#xC778;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xD30C;&#xC77C;&#xC744; &#xB2E4;&#xC2DC; &#xC800;&#xC7A5;&#xD558;&#xC138;&#xC694;.</p>
+
+  <p>&#xD130;&#xBBF8;&#xB110;&#xC5D0;&#xC11C; &#xC9C0;&#xAE08;&#xC758; &#xD30C;&#xC77C;&#xACFC; &#xB9C8;&#xC9C0;&#xB9C9; &#xCEE4;&#xBC0B; &#xAC04;&#xC758; <strong>&#xCC28;&#xC774;&#xC810;(diff)</strong> &#xC744; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+
+  <p>Git&#xC5D0;&#xC11C; <strong>&#xCC28;&#xC774;&#xC810;(diff)</strong> &#xBCF4;&#xAE30;:
+
+  </p><p><code class="shell">git diff</code></p>
+
+  <p>&#xC774;&#xC81C; &#xC9C0;&#xAE08; &#xBC30;&#xC6B4; &#xAC83;&#xB4E4;&#xB4E4;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xCD5C;&#xC885; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC744; &#xCEE4;&#xBC0B;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="select-directory">SELECT DIRECTORY</button>
+    <button class="btn-white" id="verify-challenge">VERIFY</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <span id="path-required-warning">Please select your repository directory.</span>
+    <span id="directory-path"></span>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+</div>
+
+<div class="chal-tip grey-border border-box">
+  <ul class="no-list-style">
+    <li><strong>&#xC800;&#xC7A5;&#xC18C;&#xC5D0;&#xC11C; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC758; &#xC0C1;&#xD0DC; &#xD655;&#xC778;&#xD558;&#xAE30;</strong></li>
+    <li><code class="shell">git status</code></li>
+    <li><strong>&#xD30C;&#xC77C;&#xB4E4;&#xC758; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D; &#xBCF4;&#xAE30;</strong></li>
+    <li><code class="shell">git diff</code></li>
+    <li><strong>&#xCEE4;&#xBC0B;&#xD558;&#xB824;&#xB294; &#xD30C;&#xC77C;&#xC758; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xAE30;</strong></li>
+    <li><code class="shell">git add &lt;&#xD30C;&#xC77C;&#xC774;&#xB984;&gt;</code></li>
+    <li><strong>&#xBAA8;&#xB4E0; &#xD30C;&#xC77C;&#xB4E4;&#xC758; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xAE30;</strong></li>
+    <li><code class="shell">git add .</code></li>
+    <li><strong>&#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC744; &#xC124;&#xBA85;&#xD55C; &#xC9E7;&#xC740; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xC5EC; &#xBCC0;&#xACBD;&#xC0AC;&#xD56D;&#xC744; &#xCEE4;&#xBC0B;&#xD558;&#xAE30;(aka save)</strong></li>
+    <li><code class="shell">git commit -m &quot;&lt;&#xCEE4;&#xBC0B; &#xBA54;&#xC2DC;&#xC9C0;&gt;&quot;</code></li>
+  <ul>
+</ul></ul></div>
+
+        <div class="prenext">
+  <div class="u-floatLeft">
+    <a href="repository.html" class="u-inline-block all-caps">repository
+    <div class="arrow-left"></div>
+    </a>
+  </div>
+  <div class="u-textRight u-floatRight">
+    <a href="githubbin.html" class="u-inlineBlock all-caps">GitHubbin
+    <div class="arrow-right"></div>
+    </a>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'commit_to_it'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

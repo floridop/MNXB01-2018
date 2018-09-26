@@ -1,0 +1,12 @@
+TODO:
+
+HW3:
+Get json_pp to work.
+
+Note that the dir of the fortune files is /tmp/ (i.e. root -> tmp).
+
+HW4:
+Only need to upload HW3 and submit pull request.
+
+HW5:
+In progress.

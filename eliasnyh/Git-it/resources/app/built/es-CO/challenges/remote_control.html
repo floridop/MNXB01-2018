@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO" selected="selected">Español (Colombia)</option><option value="fr-FR">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">remote control</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "es-CO"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Retos</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Conecta tu repositorio local a uno remoto y empuja (push) los cambios a este &#xFA;ltimo.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Remotos (remotes)</h2>
+
+    <p>Cu&#xE1;ndo pones algo en GitHub esa copia vive en uno de los servidores de GitHub. Esto lo convierte en un
+        repositorio <strong>remoto (remote)</strong> porque no est&#xE1; en tu computadora, est&#xE1; en un servidor, &quot;remoto&quot; en alg&#xFA;n otro
+        lugar. <strong>Empujando (pushing)</strong> tus cambios <strong>locales</strong> (en t&#xFA; computadora) a este, lo mantienes
+        al d&#xED;a.</p>
+
+    <p>Otras personas siempre pueden obtener lo m&#xE1;s reciente de tu proyecto <strong>halando (pulling)</strong> tus cambios desde el
+        remoto (a otra computadora). As&#xED; es c&#xF3;mo varias personas pueden trabajar juntas en un proyecto sin necesidad de tener acceso a
+        tu computadora d&#xF3;nde tu copia local es almacenada.</p>
+
+    <img src="../../../assets/imgs/remotes.png" alt="A diagram showing GitHub as a central server which creates the GitHub.com website. Two computers, on either side, are pushing and pulling from GitHub." width="100%">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Crear un repositorio remoto</h3>
+    <p>Si quieres sincronizar tu versi&#xF3;n <strong>local</strong> con la que est&#xE1; guardada GitHub.com. Primero crea un nuevo repositorio <strong>remoto (remote)</strong>
+        en GitHub.com.</p>
+
+    <ul>
+        <li>Ve a <a href="http://github.com " target="_blank">github.com</a>, logueate, y haz click en el &apos;+&apos; en la parte derecha
+            arriba y haz click &apos;Nuevo repositorio&apos; (&apos;New repository&apos;).
+        </li>
+        <li>Dale un nombre que coincida con el nombre de tu repositorio local, &apos;hello-world&apos;, y una descripci&#xF3;n corta.</li>
+        <li>Hazlo p&#xFA;blico. Esto significa que ser&#xE1; listado en tu perfil p&#xFA;blico.</li>
+        <li>No inicialices con una archivo README porque ya tienes un archivo, localmente, llamado &apos;readme.txt&apos;. Esta opci&#xF3;n es una ayuda
+            de GitHub si todav&#xED;a no has creado uno.
+        </li>
+        <li>Las opciones &apos;.gitignore&apos; and &apos;license&apos; deben quedar en &apos;none&apos; (ninguna). No las usaremos en este tutorial.</li>
+        <li>Haz Click en crear repositorio (create repository)!</li>
+    </ul>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Readmes, .gitignores y Licenses</h2>
+    <p>Estos son archivos comunes en proyectos de c&#xF3;digo abierto as&#xED; que para iniciar un proyecto m&#xE1;s f&#xE1;cilmente, GitHub provee una
+        opci&#xF3;n para crearlos por ti.</p>
+    <p>Un <strong>readme</strong> lo que es el proyecto, c&#xF3;mo usarlo, y regularmente, c&#xF3;mo contribuir al mismo (Algunas
+        veces hay un archivo extra, &apos;CONTRIBUTING.md&apos;, para esos detalles).</p>
+    <p>Un <strong>.gitignore</strong> es una lista de archivos a los que Git <em>NO</em> deber&#xED;a hacer seguimiento, por ejemplo, archivos con
+        contrase&#xF1;as!</p>
+    <p>Un archivo <strong>license</strong> describe el tipo de licencia que pusiste en t&#xFA; proyecto. Esto permite a otros saber c&#xF3;mo 
+        pueden usarlo. Puedes encontrar m&#xE1;s informaci&#xF3;n de los tipos de licencia en: <a href="http://www.choosealicense.com" target="_blank">choosealicense.com</a>.
+    </p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Conecta tu Local a tu Remoto</h3>
+    <p>Ahora que has iniciado un repositorio remoto en GitHub.com. En la parte de arriba puedes ver una &apos;configuraci&#xF3;n r&#xE1;pida&apos; (&apos;Quick Setup&apos;), asegurate de que
+        el bot&#xF3;n &apos;HTTPS&apos; est&#xE1; seleccionado y copia la direcci&#xF3;n, es la direcci&#xF3;n de tu repositorio en los servidores de GitHub.</p>
+
+    <p>Vuelve a la terminal, y situado dentro de la carpeta &apos;hello-world&apos; que inicializaste c&#xF3;mo repositorio de Git repository en el
+        reto anterior, vas a decirle a Git que recuerde la direcci&#xF3;n de la versi&#xF3;n remota en los servidores GitHub. T&#xFA; puedes
+        tener varios remotos configurados en tu local por lo que el remoto necesita un nombre. El remoto principal es t&#xED;picamente llamado <code>origin</code>.
+    </p>
+
+    <p>Para agragar un remoto llamado &apos;origin&apos; a t&#xFA; repositorio:</p>
+    <code class="shell">git remote add origin &lt;URLFROMGITHUB&gt;</code>
+
+    <p>Tu repositorio <strong>local</strong> ahora sabe d&#xF3;nde est&#xE1; tu repositorio <strong>remoto</strong>, llamado &apos;origin&apos;,
+        que est&#xE1; en los servidores de GitHub. Piensalo c&#xF3;mo a&#xF1;adiendo un nombre y un n&#xFA;mero telef&#xF3;nico en los contactos de tu tel&#xE9;fono m&#xF3;vil para llamarlos r&#xE1;pidamente
+        cada vez que necesites.</p>
+
+    <blockquote>
+        <p><strong>Usuarios de Windows:</strong></p>
+        <p>Si tienen <strong>GitHub Desktop</strong> en sus computadoras, un remoto llamado &apos;origin&apos; es autom&#xE1;ticamente creado
+            en su repositorio local. En ese caso, s&#xF3;lo necesitar&#xE1;s decirle cu&#xE1;l URL asociar con
+            &apos;origin&apos;. Para eso en vez de usar el comando &apos;add&apos; mencionado anteriormente usen el siguiente:</p>
+
+        <code class="shell">git remote set-url origin &lt;URLFROMGITHUB&gt;</code>
+    </blockquote>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Empuja (Push) tu trabajo al remoto</h3>
+    <p>Lo siguiente es hacer <strong>push</strong> (empujar) todo lo que has hecho localmente a tu repositorio remoto en GitHub.
+        Esto es algo que har&#xE1;s con frecuencia para que tu versi&#xF3;n remota est&#xE9; al d&#xED;a y coincida con el estado tu versi&#xF3;n
+        local.</p>
+
+    <p>Git tiene un sistema de ramas (branches) para que puedas trabajar en diferentes partes del proyecto en tiempos diferentes. Aprenderemos
+        m&#xE1;s acerca de ello despu&#xE9;s, pero por defecto la primera branch es nombrada &apos;master&apos;. Cu&#xE1;ndo empujas (push) (y m&#xE1;s adelante halas) desde un
+        proyecto, le dices a Git el <strong>nombre de la rama (branch name)</strong> que quieres y el nombre del <strong>remoto</strong> que
+        en el que debe residir.</p>
+
+    <p>En este caso, vamos a enviar una rama llamada &apos;master&apos; a nuestro remoto en GitHub llamado &apos;origin&apos;. </p>
+    <code class="shell">git push origin master</code>
+
+    <p>Ahora ve a la p&#xE1;gina de tu repositorio remoto en GitHub.com y refrescala. <strong>Wow!</strong> Todo 
+        es lo mismo ahora tanto local c&#xF3;mo remotamente. Felicitaciones, has creado tu primer repositorio p&#xFA;blico!</p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="select-directory">SELECT DIRECTORY</button>
+    <button class="btn-white" id="verify-challenge">VERIFY</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <span id="path-required-warning">Please select your repository directory.</span>
+    <span id="directory-path"></span>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+</div>
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Agregar conexiones remotas</strong></li>
+        <code class="shell">git remote add &lt;REMOTENAME&gt; &lt;URL&gt;</code>
+        <li><strong>Modificar la URL de un remoto</strong></li>
+        <code class="shell">git remote set-url &lt;REMOTENAME&gt; &lt;URL&gt;</code>
+        <li><strong>Halar cambios</strong></li>
+        <code class="shell">git pull &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;</code>
+        <li><strong>Ver las direcciones remotas</strong></li>
+        <code class="shell">git remote -v</code>
+        <li><strong>Empujar cambios</strong></li>
+        <code class="shell">git push &lt;REMOTENAME&gt; &lt;BRANCH&gt;</code>
+    </ul>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="githubbin.html" class="u-inline-block all-caps">GitHubbin
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="forks_and_clones.html" class="u-inlineBlock all-caps">forks and clones
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'remote_control'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

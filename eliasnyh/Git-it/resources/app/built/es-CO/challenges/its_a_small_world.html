@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO" selected="selected">Español (Colombia)</option><option value="fr-FR">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">it&#x27;s a small world</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "es-CO"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Retos</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>A&#xF1;adir un colaborador a tu proyecto.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Social Coding</h2>
+    <p>Trabajar con otros es una de las mejores cosas de GitHub porque es m&#xE1;s f&#xE1;cil trabajar desde cualquier lugar o
+        zona horaria con otras personas.</p>
+
+    <p><strong>Los colaboradores</strong> otros usuarios de GitHub que tienen permisos para hacer cambios a un repositorio
+        que pertenece a otra persona. Puedes escuchar tambi&#xE9;n el t&#xE9;rmino <strong>contribuidor (contributor)</strong>, esto describe a un usuario de GitHub
+        que ha hecho contribuciones, por medio de Forks y Pull requests, a un proyecto.</p>
+
+    <img src="../../../assets/imgs/reporobot.png" width="100%" alt="A photo of a cat with a space helment drawn on. This is Reporobot the cat and your collaborator">
+    <span class="inline-tip"><a href="https://github.com/reporobot">@reporobot</a> es un robot del espacio exterior que ama colaborar en repos.</span>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Hola, Repo Robot!</h3>
+    <p>Para a&#xF1;adir colaboradores a uno de nuestros proyectos, visita la p&#xE1;gina de tu repositorio en tu cuenta de GitHub y haz click en 
+        la pesta&#xF1;a &apos;Settings&apos; (configuraci&#xF3;n) en el men&#xFA; en la parte superior de la p&#xE1;gina. Selecciona la opci&#xF3;n &apos;Collaborators&apos; (colaboradores). Escribe el
+        nombre de usuario dentro del campo de texto y haz click en &apos;Add&apos;.</p>
+
+    <p>Ve a la p&#xE1;gina de tu repositorio bifurcado en GitHub y a&#xF1;ade &apos;reporobot&apos; c&#xF3;mo colaborador. La URL deber&#xED;a
+        c&#xF3;mo la siguiente, pero c&#xF3;mo nombre de usuario.</p>
+
+    <code>github.com/YOURUSERNAME/patchwork/settings/collaboration</code>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="verify-challenge">VERIFY</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="branches_arent_just_for_birds.html" class="u-inline-block all-caps">branches aren&#x27;t just for birds
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="pull_never_out_of_date.html" class="u-inlineBlock all-caps">pull never out of date
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'its_a_small_world'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

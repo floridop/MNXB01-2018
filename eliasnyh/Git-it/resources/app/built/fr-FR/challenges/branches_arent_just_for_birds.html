@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO">Español (Colombia)</option><option value="fr-FR" selected="selected">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">branches aren&#x27;t just for birds</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "fr-FR"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Défis</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Ajoutez une branche, localement, &#xE0; votre d&#xE9;p&#xF4;t fork&#xE9; pour travailler sur vos modifications.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Branches</h2>
+    <p>Les d&#xE9;p&#xF4;ts Git utilisent des branches pour isoler le travail au besoin. C&apos;est une pratique courante lorsque vous 
+    travaillez sur un projet de cr&#xE9;er une <strong>branche</strong> pour que vos modifications de travail soient 
+    conserv&#xE9;e &#xE0; part. De cette fa&#xE7;on, vous pouvez faire votre travail, tandis que la branche principale, g&#xE9;n&#xE9;ralement 
+    nomm&#xE9;e &#xAB;master&#xBB;, reste stable. Lorsque le travail sur votre branche est termin&#xE9; vous le fusionnez dans la branche 
+    principale &apos;master&apos;.</p>
+
+    <p>Le sch&#xE9;ma ci-dessous montre comment vous pouvez d&#xE9;river de votre branche &apos;master&apos;, travailler et fusionner ces 
+    modifications dans &#xAB;master&#xBB;. Vous pouvez m&#xEA;me d&#xE9;river d&apos;une autre branche si vous le souhaitez, la branche &apos;master&apos; 
+    n&apos;a pas &#xE0; &#xEA;tre la base d&apos;un embranchement.</p>
+
+    <img src="../../../assets/imgs/branches.png" alt="Un diagramme montrant une ligne horizontale, repr&#xE9;sentant la branche ma&#xEE;tresse, avec une autre ligne se ramifiant vers le haut et plus tard reliant l&apos;original. Une autre ligne d&#xE9;rive de la branche ma&#xEE;tresse par le bas et une autre branche d&#xE9;rive de celle-ci. De ceux-ci se rencontrent avec la ligne principale d&apos;origine, aussi." width="100%">
+
+    <p>Pour une excellente visualisation sur la fa&#xE7;on dont les branches fonctionnent dans un projet, consultez ce guide 
+    GitHub: <a href="http://guides.github.com/overviews/flow/" target="_blank">guides.github.com/overviews/flow</a></p>
+
+    <h2>GitHub Pages</h2>
+    <p>GitHub h&#xE9;bergera automatiquement les fichiers de sites statiques. Pour &#xEA;tre accessible comme un site web, il 
+    doivent &#xEA;tre situ&#xE9;es dans la branche nomm&#xE9;e &apos;gh-pages&apos;. Ce service gratuit est appel&#xE9; 
+    <a href="http://pages.github.com">GitHub Pages</a>. Puisque le projet que vous avez lanc&#xE9; cr&#xE9;e un site Web, la 
+    branche principale sera &apos;gh-pages&apos; au lieu de &apos;master&apos;. Tous les d&#xE9;p&#xF4;t qui ont une branche &apos;gh-pages&apos; ont un site 
+    Web directement accessible en ligne, se situant &#xE0; l&apos;URL construite sur le mod&#xE8;le suivant:</p>
+    
+    <code>http://githubusername.github.io/repositoryname</code>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Cr&#xE9;er une branche</h3>
+    <p>Lorsque vous cr&#xE9;ez une branche, Git copie l&apos;int&#xE9;gralit&#xE9; de la branche sur laquelle vous vous trouvez et la place 
+    dans la branche nouvellement cr&#xE9;e.</p>
+
+    <p>Toujours dans votre d&#xE9;p&#xF4;t local &#xAB;patchwork&#xBB;, tapez <code> git status </code> pour voir sur 
+    quelle branche vous &#xEA;tes. Git devrait r&#xE9;pondre que vous &#xEA;tes sur la branche &apos;gh-pages&apos;.</p>
+
+    <p>Cr&#xE9;ez maintenant une nouvelle branche et nommez-la &quot;add-&lt;username&gt;&quot;, o&#xF9; &apos;username&apos; est votre nom 
+    d&apos;utilisateur. Par exemple, &quot;Add-jlord&quot;. <strong>Les branches sont sensibles &#xE0; la casse, nommez-l&#xE0; exactement avec 
+    la m&#xEA;me capitalisation que votre compte GitHub</strong>.</p>
+
+    <p><code class="shell">git branch &lt;BRANCHNAME&gt;</code></p>
+
+    <p>Maintenant, vous avez une branche avec un nouveau nom identique &#xE0; &apos;gh-pages&apos;.</p>
+
+    <p>Pour entrer dans une branche et travailler dessus, vous devez <strong> checkout </strong> cette branche. Allez 
+    sur votre nouvelle branche: </p>
+    <p><code class="shell">git checkout &lt;BRANCHNAME&gt;</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>&#xC9;tape: Cr&#xE9;er un nouveau fichier</h3>
+    <p>Retour dans votre &#xE9;diteur de texte:</p>
+    <ul>
+        <li>Cr&#xE9;ez un nouveau fichier nomm&#xE9; <span style="white-space: nowrap;">&quot;add-&lt;USERNAME&gt;.txt&quot;</span>, o&#xF9;
+            &apos;username&apos; est votre nom d&apos;utilisateur. Par exemple, &quot;add-jlord.txt&quot;.
+        </li>
+        <li>&#xC9;crivez simplement votre nom d&apos;utilisateur GitHub et c&apos;est tout. Par exemple, je taperez &apos;jlord&apos;.</li>
+        <li>Enregistrez ce fichier dans le dossier &apos;contributors&apos; de Patchwork: <strong>Patchwork/contributors/add-yourusername.txt</strong>
+        </li>
+        <li>V&#xE9;rifiez vos modifications (voir ci-dessous).</li>
+    </ul>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>V&#xE9;rification</h3>
+    <p>Effectuez les &#xE9;tapes ci-apr&#xE8;s pour v&#xE9;rifier un projet: </p>
+
+    <p><code class="shell">git status</code></p>
+    <p><code class="shell">git add &lt;contributors/FILENAME&gt;</code></p>
+    <p><code class="shell">git commit -m &quot;commit message&quot;</code></p>
+
+    <p>Maintenant vous pouvez pousser vos modifications sur <b>votre fork</b>, avec le remote &apos;origin&apos;, sur GitHub:</p>
+    <p><code class="shell">git push origin &lt;BRANCHNAME&gt;</code></p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="select-directory">S&#xC9;LECTIONNER UN R&#xC9;PERTOIRE</button>
+    <button class="btn-white" id="verify-challenge">V&#xC9;RIFIER</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <span id="path-required-warning">S&#xE9;lectionner le dossier contenant votre d&#xE9;p&#xF4;t.</span>
+    <span id="directory-path"></span>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Effacer le statut termin&#xE9;</button>
+</div>
+
+<div class="chal-no-pass grey-border border-box">
+    <h4>Permission denied...error: 403</h4>
+    
+    <p>Vous essayer de pousser des modifications &#xE0; un r&#xE9;f&#xE9;rentiel auquel vous n&apos;avez pas acc&#xE8;s en &#xE9;criture. Dans ce cas, 
+    vous poussez probablement sur le d&#xE9;p&#xF4;t original &apos;jlord/patchwork&apos;. Assurez-vous que avez bien pouss&#xE9; sur le remote &apos;origin&apos; 
+    et qu&apos;il pointe bien vers l&apos;adresse de votre fork sur GitHub. Pour v&#xE9;rifier et voir quels sont les remotes et o&#xF9; ils 
+    pointent, ex&#xE9;cutez <code> git remote -v </code>. Vous devriez avoir &apos;upstream&apos; indiquant &apos;jlord/patchwork&apos; et 
+    &apos;origin&apos; indiquant &apos;yourusername/patchwork&apos;
+    </p>
+    
+    <p>Pour r&#xE9;parer un remote qui pointe vers le mauvais endroit, vous pouvez red&#xE9;finir son URL:</p>
+    
+    <p><code>git remote set-url origin <urltoyourfork></urltoyourfork></code></p>
+
+    <h4>Authentication failed...error: 401</h4>
+    
+    <p>Votre identit&#xE9; n&apos;a pas pu &#xEA;tre v&#xE9;rifi&#xE9;e. Vous avez peut-&#xEA;tre activ&#xE9; 2FA (Two Factor Authentication) auquel cas 
+    vous devez utiliser un jeton d&apos;acc&#xE8;s personnel comme mot de passe. Vous pouvez en g&#xE9;n&#xE9;rer un en 
+    <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use">suivant ces instructions </a>. 
+    Vous devrez le garder et l&apos;utiliser &#xE0; la place de votre mot de passe lorsque vous y &#xEA;tes invit&#xE9;. Vous pouvez 
+    &#xE9;galement <a href="https://help.github.com/articles/caching-your-github-password-in-git/"> enregistrer ce jeton 
+    d&apos;acc&#xE8;s </a> sur votre ordinateur afin de ne plus avoir &#xE0; le saisir.
+    </p>
+
+    <h4>File NOT in contributors folder</h4>
+    
+    <p> Le fichier que vous cr&#xE9;ez doit &#xEA;tre plac&#xE9; dans le dossier &apos;contributors&apos; du r&#xE9;f&#xE9;rentiel Patchwork. Si vous 
+    l&apos;avez mis ailleurs, d&#xE9;placez votre fichier dans le dossier. Vous pouvez v&#xE9;rifiez &#xE0; nouveau <code> git status</code> 
+    et vous verrez vos modifications. Ajoutez et soumettez (commit) &quot;toutes&quot; (-A) les modifications (ajouts et 
+    suppressions) avec les commandes ci-dessous.
+    </p>
+    <p><code class="shell">git add -A</code></p>
+    <p><code class="shell">git commit -m &quot;move file into contributors folder&quot;</code></p>
+
+    <h4>Branch name expected: _____</h4>
+    <p>Le nom de la branche doit correspondre exactement &#xE0; votre nom d&apos;utilisateur. Pour changer votre nom de branche:</p>
+    <p><code class="shell">git branch -m &lt;NEWBRANCHNAME&gt;</code></p>
+    <p>Lorsque vous avez effectu&#xE9; vos mises &#xE0; jour, v&#xE9;rifiez &#xE0; nouveau!</p>
+</div>
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Vous pouvez cr&#xE9;er et passer sur une branche en une seule commande</strong></li>
+        <li><code class="shell">git checkout -b &lt;BRANCHNAME&gt;</code></li>
+        <li><strong>Cr&#xE9;er une nouvelle branche</strong></li>
+        <li><code class="shell">git branch &lt;BRANCHNAME&gt;</code></li>
+        <li><strong>Se d&#xE9;placer sur une branche</strong></li>
+        <li><code class="shell">git checkout &lt;BRANCHNAME&gt;</code></li>
+        <li><strong>Lister les branches</strong></li>
+        <li><code class="shell">git branch</code></li>
+        <li><strong>Renommer la branche courante</strong></li>
+        <li><code class="shell">git branch -m &lt;NEWBRANCHNAME&gt;</code></li>
+        <li><strong>V&#xE9;rifiez la branche sur laquelle vous travaillez</strong></li>
+        <li><code class="shell">git status</code></li>
+    </ul>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="forks_and_clones.html" class="u-inline-block all-caps">forks and clones
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="its_a_small_world.html" class="u-inlineBlock all-caps">it&#x27;s a small world
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'branches_arent_just_for_birds'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO">Español (Colombia)</option><option value="fr-FR" selected="selected">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">merge tada</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "fr-FR"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Défis</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Fusionnez votre branche localement, supprimez la branche et tirez depuis &apos;upstream&apos;.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Nettoyage</h2>
+
+    <p>Une fois que vous n&apos;avez plus besoin de branches, vous pouvez les supprimer localement et &#xE0; distance. 
+    Ceci est utile pour que l&apos;on ne se retrouvent avec une pile de vieilles branches devenues inutiles.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Fusionner localement</h3>
+    <p>Votre pull request a &#xE9;t&#xE9; fusionn&#xE9;e! Votre branche a &#xE9;t&#xE9; fusionn&#xE9;e dans la branche &apos;gh-pages&apos; de l&apos;original sur GitHub.
+        Vous pouvez &#xE9;galement fusionner votre branche localement. 
+    </p>
+
+    <p>Tout d&apos;abord, passez sur la branche avec laquelle vous souhaitez fusionner, dans ce cas la branche &apos;gh-pages&apos;.</p>
+    <p><code class="shell">git checkout gh-pages</code></p>
+
+    <p>Maintenant, dites &#xE0; Git quelle branche vous souhaitez fusionner, dans ce cas, votre branche de fonctionnalit&#xE9; 
+    qui commence par &apos;add-&apos;.</p>
+    <p><code class="shell">git merge &lt;BRANCHNAME&gt;</code></p>
+
+    <p>Nettoyer en supprimant la branche de fonctionnalit&#xE9;. Maintenant qu&apos;elle a &#xE9;t&#xE9; fusionn&#xE9;, vous n&apos;en avez plus 
+    vraiment besoin.</p>
+    <p><code class="shell">git branch -d &lt;BRANCHNAME&gt;</code></p>
+
+    <p>Vous pouvez &#xE9;galement supprimer la branche de votre remote sur GitHub:</p>
+    <p><code class="shell">git push &lt;REMOTENAME&gt; --delete &lt;BRANCHNAME&gt;</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Tirer depuis Upstream</h3>
+    <p>Last but not least, l&apos;original a chang&#xE9; depuis que votre pull request a &#xE9;t&#xE9; fusionn&#xE9;e : Reporobot a ajout&#xE9; 
+    votre nom au site Web! Si vous tirez ces changements depuis le remote &apos;upstream&apos;, vous serez &#xE0; jour et disposerez 
+    &#xE9;galement de cette version. Vous pourrez le voir en live sur la page dont l&apos;adresse est de cette forme : 
+    yourusername.github.io/patchwork.
+    </p>
+
+    <p>Pour tirer depuis le d&#xE9;p&#xF4;t original sur le remote upstream:</p>
+    <p><code class="shell">git pull upstream gh-pages</code></p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>F&#xE9;licitations!</h2>
+    <p>Vous avez cr&#xE9;&#xE9; des d&#xE9;p&#xF4;ts locaux, des d&#xE9;p&#xF4;ts &#xE0; distance, travaill&#xE9; avec un collaborateur, pouss&#xE9;, tir&#xE9; et joint 
+    les millions d&apos;autres personnes qui d&#xE9;veloppent et enrichissent l&apos;open source!</p>
+
+    <p>Visitez <a href="https://jlord.github.io/patchwork" target="_blank">jlord.github.io/patchwork</a> pour voir votre 
+    nom incorpor&#xE9;! Vous voulez continuer et aller plus loin ? Regardez la section <a href="../pages/resources.html#what-next">What Next</a>
+    dans les ressources de cette application.</p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="select-directory">S&#xC9;LECTIONNER UN R&#xC9;PERTOIRE</button>
+    <button class="btn-white" id="verify-challenge">V&#xC9;RIFIER</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <span id="path-required-warning">S&#xE9;lectionner le dossier contenant votre d&#xE9;p&#xF4;t.</span>
+    <span id="directory-path"></span>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Effacer le statut termin&#xE9;</button>
+</div>
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Fusionner une branche dans la branche courante</strong></li>
+        <code class="shell">git merge &lt;BRANCHNAME&gt;</code>
+        <li><strong>Changer la branche sur laquelle vous travaillez</strong></li>
+        <code class="shell">git checkout &lt;BRANCHNAME&gt;</code>
+        <li><strong>Supprimer une branche locale</strong></li>
+        <code class="shell">git branch -d &lt;BRANCHNAME&gt;</code>
+        <li><strong>Supprimer une branche distante</strong></li>
+        <code class="shell">git push &lt;REMOTENAME&gt; --delete &lt;BRANCHNAME&gt;</code>
+        <li><strong>Tirer depuis une branche distante</strong></li>
+        <code class="shell">git pull &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;</code>
+    </ul>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="requesting_you_pull_please.html" class="u-inline-block all-caps">requesting you pull please
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="../pages/index.html" class="u-inlineBlock all-caps">Done!
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'merge_tada'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git-it</title>
+    <link rel="stylesheet" href="../../../assets/css/2-double-bounce.css">
+    <link rel="stylesheet" href="../../../assets/css/new-style.css">
+    <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+    <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  </head>
+  <body>
+    <header id="challenge-header" class="site-header">
+    <div class="lang-select">
+        <select id="lang-select" class="btn-outline lang-select">
+            <option value="en-US">English</option><option value="ja-JP">日本語</option><option value="zh-TW">中文(臺灣)</option><option value="ko-KR">한국어</option><option value="pt-BR">Português Brasileiro</option><option value="uk-UA">Українська</option><option value="es-CO">Español (Colombia)</option><option value="fr-FR" selected="selected">Français</option>
+        </select>
+    </div>
+    <a class="filledblock" href="../pages/index.html">
+        Git-it
+    </a>
+    <span class="challenge-title">forks and clones</span>
+</header>
+
+<script>
+    var selector = document.getElementById('lang-select');
+    selector.value = "fr-FR"
+</script>
+
+    <div class="wrapper" id="challenge-body">
+      <div id="challenge-sidebar" class="sidebar">
+    <ul class="list-of-challenges">
+        <h3>Défis</h3>
+        <li>
+            <a id="get_git" data-id="0" href="get_git.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                get git
+            </a>
+        </li>
+        <li>
+            <a id="repository" data-id="1" href="repository.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                repository
+            </a>
+        </li>
+        <li>
+            <a id="commit_to_it" data-id="2" href="commit_to_it.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                commit to it
+            </a>
+        </li>
+        <li>
+            <a id="githubbin" data-id="3" href="githubbin.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                GitHubbin
+            </a>
+        </li>
+        <li>
+            <a id="remote_control" data-id="4" href="remote_control.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                remote control
+            </a>
+        </li>
+        <li>
+            <a id="forks_and_clones" data-id="5" href="forks_and_clones.html"
+               class="challenge-item current">
+                <div class="current-arrow">▶️</div>
+                forks and clones
+            </a>
+        </li>
+        <li>
+            <a id="branches_arent_just_for_birds" data-id="6" href="branches_arent_just_for_birds.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                branches aren&#x27;t just for birds
+            </a>
+        </li>
+        <li>
+            <a id="its_a_small_world" data-id="7" href="its_a_small_world.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                it&#x27;s a small world
+            </a>
+        </li>
+        <li>
+            <a id="pull_never_out_of_date" data-id="8" href="pull_never_out_of_date.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                pull never out of date
+            </a>
+        </li>
+        <li>
+            <a id="requesting_you_pull_please" data-id="9" href="requesting_you_pull_please.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                requesting you pull please
+            </a>
+        </li>
+        <li>
+            <a id="merge_tada" data-id="10" href="merge_tada.html"
+               class="challenge-item">
+                <div class="current-arrow">▶️</div>
+                merge tada
+            </a>
+        </li>
+    </ul>
+
+</div>
+      <div class="content">
+        <div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Forker un projet GitHub et le cloner localement.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Fork</h2>
+    <p>Jusqu&apos;&#xE0; pr&#xE9;sent, vous avez r&#xE9;alis&#xE9; un projet localement et l&apos;avez pouss&#xE9; &#xE0; GitHub, mais ce n&apos;est que la moiti&#xE9; 
+    du plaisir! L&apos;autre moiti&#xE9; est de travailler avec d&apos;autres personnes et d&apos;autres projets.</p>
+
+    <p>Lorsque vous <strong> forkez </strong> un d&#xE9;p&#xF4;t, vous en cr&#xE9;ez une copie sur votre compte GitHub. Votre fork 
+    commence sa vie en tant que d&#xE9;p&#xF4;t <strong> distant </strong> - Il existe juste sur votre compte GitHub, et non sur 
+    votre ordinateur. Les forks sont utilis&#xE9;es pour cr&#xE9;er votre propre version d&apos;un projet (cette diff&#xE9;renciation de 
+    l&apos;original est comme une sorte de bifurcation de la route du projet) ou contribuer en partageant vos modifications 
+    (telles que les corrections de bogues ou les nouvelles fonctionnalit&#xE9;s) avec le projet original.</p>
+
+    <p>Pour obtenir un d&#xE9;pot fork&#xE9; &#xE0; partir de votre compte GitHub sur votre ordinateur, vous devez le <strong> cloner </strong>. 
+    Le clonage copie le d&#xE9;p&#xF4;t distant sur votre ordinateur afin que vous puissiez travailler localement.</p>
+
+    <img src="../../../assets/imgs/clone.png" alt="Un diagramme montrant un d&#xE9;p&#xF4;t de GitHub copi&#xE9; sur votre compte GitHub puis copi&#xE9; sur votre ordinateur local." width="100%">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Forkez le d&#xE9;p&#xF4;t Patchwork</h3>
+    <p>Le projet avec lequel nous travaillerons est situ&#xE9; ici : 
+    <a href="http://github.com/jlord/patchwork" target="_blank"> github.com/jlord/patchwork </a>.
+    Acc&#xE9;dez &#xE0; cette page et cliquez sur le bouton &apos;Fork&apos; en haut &#xE0; droite. Une fois l&apos;animation termin&#xE9;e, vous avez 
+    une copie de ce projet sur votre compte. Copiez l&apos;URL HTTPS de votre fork dans la barre d&apos;adresse de votre 
+    navigateur, c&apos;est l&apos;adresse de votre projet fork&#xE9; sur les serveurs de GitHub.</p>
+    <!-- TODO write address for user here -->
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Clonage de votre fork en local</h3>
+    <p>Maintenant, dans le terminal, vous clonez le r&#xE9;f&#xE9;rentiel sur votre ordinateur. Il cr&#xE9;era automatiquement un 
+    nouveau dossier pour le d&#xE9;p&#xF4;t. Assurez-vous de ne pas le cloner &#xE0; l&apos;int&#xE9;rieur d&apos;un autre dossier contenant un d&#xE9;p&#xF4;t Git! </p>
+
+    <p>Assurez-vous de ne pas &#xEA;tre dans le r&#xE9;pertoire &apos;hello-world&apos; des d&#xE9;fis pr&#xE9;c&#xE9;dents. Pour sortir de ce dossier, 
+    afin de pouvoir cloner, proc&#xE9;dez comme suit:
+    </p>
+
+    <p>Sortir du dossier &apos;hello-world&apos;:<br><span class="inline-tip">Astuce: les deux points d&#xE9;signent le r&#xE9;pertoire p&#xE8;re.</span>
+    </p>
+    <p><code class="shell">cd ..</code></p>
+
+    <p>Maintenant que vous n&apos;&#xEA;tes plus dans un d&#xE9;p&#xF4;t Git, clonez votre fork:</p>
+    <p><code class="shell">git clone &lt;URLFROMGITHUB&gt;</code></p>
+
+    <p>Entrez dans le dossier cr&#xE9;&#xE9; qui contient la copie locale de votre fork (dans ce cas, nomm&#xE9;e &apos;patchwork&apos;).
+    </p><p><code class="shell">cd patchwork</code></p>
+
+    <p>Maintenant, vous avez une copie du d&#xE9;p&#xF4;t sur votre ordinateur et il est automatiquement connect&#xE9; au d&#xE9;p&#xF4;t distant
+        (votre copie fork&#xE9;e) de votre compte GitHub. Tapez <code> git remote -v </code> pour voir que l&apos;adresse 
+        distante est d&#xE9;j&#xE0; configur&#xE9;e.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Connectez-vous au d&#xE9;p&#xF4;t d&apos;origine</h3>
+
+    <p>What if the original repository you forked happens to change? You&apos;ll want to be able to <strong>pull</strong> in
+        those changes too. So let&apos;s add another remote connection, this time to the original, <a href="http://github.com/jlord/patchwork" target="_blank">github.com/jlord/patchwork</a>, repository with
+        its URL.</p>
+
+    <p>You can name this remote connection anything you want, but typically people use the name &apos;upstream&apos;; let&apos;s use
+        that for this.</p>
+
+    <p><code class="shell">git remote add upstream https://github.com/jlord/patchwork.git</code></p>
+
+    <p>Qu&apos;arrive-t-il si le d&#xE9;p&#xF4;t d&apos;origine change ? Vous voudrez pouvoir <strong>tirer</strong> ces changements 
+    localement. Nous allons donc ajouter un autre remote, cette fois-ci &#xE0; version originale du projet, 
+    <a href="http://github.com/jlord/patchwork" target="_ blank">github.com/jlord/patchwork</a>.</p>
+</div>
+
+<div class="verify bold-blue solid-box">
+    <button class="btn-white" id="select-directory">S&#xC9;LECTIONNER UN R&#xC9;PERTOIRE</button>
+    <button class="btn-white" id="verify-challenge">V&#xC9;RIFIER</button>
+    <div id="verify-spinner" class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <span id="path-required-warning">S&#xE9;lectionner le dossier contenant votre d&#xE9;p&#xF4;t.</span>
+    <span id="directory-path"></span>
+    <ul id="verify-list">
+    </ul>
+    <button class="btn-white" id="clear-completed-challenge">Effacer le statut termin&#xE9;</button>
+</div>
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Ajouter un remote</strong></li>
+        <li><code class="shell">git remote add &lt;REMOTENAME&gt; &lt;URL&gt;</code></li>
+        <li><strong>Changer l&apos;URL d&apos;un remote</strong></li>
+        <li><code class="shell">git remote set-url &lt;REMOTENAME&gt; &lt;URL&gt;</code></li>
+        <li><strong>Afficher l&apos;adresse des remotes</strong></li>
+        <li><code class="shell">git remote -v</code></li>
+    </ul>
+</div>
+
+        <div class="prenext">
+    <div class="u-floatLeft">
+        <a href="remote_control.html" class="u-inline-block all-caps">remote control
+            <div class="arrow-left"></div>
+        </a>
+    </div>
+    <div class="u-textRight u-floatRight">
+        <a href="branches_arent_just_for_birds.html" class="u-inlineBlock all-caps">branches aren&#x27;t just for birds
+            <div class="arrow-right"></div>
+        </a>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      var challengeStatus = require('../../../lib/challenge-completed.js')
+      // TODO Get this from the DOM and don't do template in JS
+      var currentChallenge = 'forks_and_clones'
+      challengeStatus.completed(currentChallenge)
+    </script>
+
+    <script>require('../../../lib/handle-external-links.js')</script>
+    <script>require('../../../lib/languages.js')</script>
+    <script>require('../../../lib/challenge.js')</script>
+  </body>
+</html>

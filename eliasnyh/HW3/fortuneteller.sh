@@ -163,9 +163,13 @@ dumpfile ${FTTEMPDIR}/fortunes
 # the redirector > to write the output of the commands to a file.)
 #<YOUR CODE HERE>
 
+cat ${FTTEMPDIR}/fortunes | json_pp -t json -f json > ${FTTEMPDIR}/fortunes_pp  
+
 # E5 (1 points)
 # use the dumpfile function to print the content of the fortunes_pp file.
 #<YOUR CODE HERE>
+
+dumpfile ${FTTEMPDIR}/fortunes_pp
 
 # E6 (2 points) exit with 0 if --printinfo specified.
 # cleanup if --cleanup is specified.
@@ -176,9 +180,18 @@ dumpfile ${FTTEMPDIR}/fortunes
 # helper functions at the beginning of this file.
 #<YOUR CODE HERE>
 
+if [[ "${PRINTINFO}x" == "--printinfox" ]]; then
+	echo "\nExiting because --printinfo specified"
+	cleanup ${FTTEMPDIR}
+	exit 0
+fi
+
 # E7 (1 point)
 # Extract only the lines containing "message" and save them as $FTTEMPDIR/fortunes_messages
 #<YOUR CODE HERE>
+
+cat ${FTTEMPDIR}/fortunes_pp | grep message | cut -c19- > ${FTTEMPDIR}/fortunes_messages
+
 
 # E8 (2 points) calculate the number of lines in the fortunes_messages file
 # and store it in a variable NUMMSG
@@ -187,12 +200,17 @@ dumpfile ${FTTEMPDIR}/fortunes
 # https://www.thegeekstuff.com/2013/06/cut-command-examples
 #<YOUR CODE HERE>
 
+NUMMSG=`wc -l ${FTTEMPDIR}/fortunes_pp | cut -c-3`
+
+
 # E9 (2 points)
 # pick a random number between 1 and NUMMSG and save it into the variable
 # CHOSEN
 # use the predefined variable RANDOM and the bc command. For hints see:
 # https://coderwall.com/p/s2ttyg/random-number-generator-in-bash
 #<YOUR CODE HERE>
+
+CHOSEN=`echo $(( $RANDOM % NUMMSG + 1 ))`
 
 #E10 (2 points)
 # Pick the CHOSEN message from the list and print it on screen
@@ -201,12 +219,20 @@ dumpfile ${FTTEMPDIR}/fortunes
 # put the message in a variable called MESSAGE
 #<YOUR CODE HERE>
 
+MESSAGE=`head -${CHOSEN} ${FTTEMPDIR}/fortunes_messages | tail -1`
+
 # E11 (1 point) extract only the message content using cut
 #<YOUR CODE HERE>
+
+
+# I did this to all messages when creating the fortunes_messages file.
+
 
 # E12 (1 point) Use echo -e to print spaces and newlines to show the 
 # output as in the simple_call_output file
 #<YOUR CODE HERE>
+
+echo -e "\n 	$MESSAGE	\n\n"
 
 # calling cleanup to clean the tmp folder
 cleanup $FTTEMPDIR

@@ -1,0 +1,18 @@
+Hostname is: 
+Lubuntu-VirtualBox
+Uptime is: 
+ 17:38:22 up  3:45,  1 user,  load average: 0,06, 0,17, 0,23
+Disk space usage information produced by the df command: 
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev              744796       0    744796   0% /dev
+tmpfs             154156     984    153172   1% /run
+/dev/sda1       30830500 5413572  23827784  19% /
+tmpfs             770760   33576    737184   5% /dev/shm
+tmpfs               5120       4      5116   1% /run/lock
+tmpfs             770760       0    770760   0% /sys/fs/cgroup
+tmpfs             154152      20    154132   1% /run/user/1000
+Number of entries in /etc: 
+210
+Number of entries in /usr/bin: 
+1151
+I will now sleep for 3 minutes.

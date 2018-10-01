@@ -180,16 +180,15 @@ dumpfile $FTTEMPDIR/fortunes_pp
 	fi
 	
 	if [[ "${CLEANUP}x" == "--cleanupx" ]]; then
-          echo "cleaning temporary folders..."
-          rm -r $FTTEMPDIR
-          exit 0
+        echo "cleaning temporary folders..."
+        rm -ir $FTTEMPDIR
+        exit 0
 	fi
 
 # E7 (1 point)
 # Extract only the lines containing "message" and save them as $FTTEMPDIR/fortunes_messages
 #<YOUR CODE HERE>
 grep message $FTTEMPDIR/fortunes_pp > $FTTEMPDIR/fortunes_messages
-cat $FTTEMPDIR/fortunes_messages
 
 # E8 (2 points) calculate the number of lines in the fortunes_messages file
 # and store it in a variable NUMMSG
@@ -197,6 +196,7 @@ cat $FTTEMPDIR/fortunes_messages
 # see cut examples here:
 # https://www.thegeekstuff.com/2013/06/cut-command-examples
 #<YOUR CODE HERE>
+NUMMSG=$(wc $FTTEMPDIR/fortunes_messages|cut -c2-4)
 
 # E9 (2 points)
 # pick a random number between 1 and NUMMSG and save it into the variable
@@ -204,6 +204,7 @@ cat $FTTEMPDIR/fortunes_messages
 # use the predefined variable RANDOM and the bc command. For hints see:
 # https://coderwall.com/p/s2ttyg/random-number-generator-in-bash
 #<YOUR CODE HERE>
+CHOSEN=$(( $RANDOM % $NUMMSG + 1))
 
 #E10 (2 points)
 # Pick the CHOSEN message from the list and print it on screen
@@ -211,13 +212,16 @@ cat $FTTEMPDIR/fortunes_messages
 # "print by line number using bash"
 # put the message in a variable called MESSAGE
 #<YOUR CODE HERE>
+MESSAGE=$(head -$CHOSEN $FTTEMPDIR/fortunes_messages|tail -1)
 
 # E11 (1 point) extract only the message content using cut
 #<YOUR CODE HERE>
+MESSAGE2=$(head -$CHOSEN $FTTEMPDIR/fortunes_messages|tail -1|cut -d'"' -f4)
 
 # E12 (1 point) Use echo -e to print spaces and newlines to show the 
 # output as in the simple_call_output file
 #<YOUR CODE HERE>
+echo -e "\n	$MESSAGE2\n"
 
 # calling cleanup to clean the tmp folder
 cleanup $FTTEMPDIR

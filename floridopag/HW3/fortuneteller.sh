@@ -28,7 +28,7 @@
 # at http://fortunecookieapi.herokuapp.com/v1/fortunes
 # understand what kind of data structure teh website returns and write it here:
 #
-# Datastructure format is ____________________
+# Datastructure format is JSON
 
 
 ###### DO NOT TOUCH THE CODE BELOW #####################################
@@ -138,6 +138,7 @@ cleanup() {
 # where XXX are random characters created by mktemp. Read mktemp
 # documentation to understand more.
 #<YOUR CODE HERE>
+FTTEMPDIR=$(mktemp -d /tmp/ftellerXXX)
 
 # E2 (1 point)
 # Download the database of fortunes from the URL
@@ -146,10 +147,12 @@ cleanup() {
 # save it into FTTEMPDIR
 # make sure the output of wget is not visible to the user.
 #<YOUR CODE HERE>
+wget -q http://fortunecookieapi.herokuapp.com/v1/fortunes -P $FTTEMPDIR;
 
 # E3 (1 point)
 # use the dumpfile function to print the content of the fortunes file.
 #<YOUR CODE HERE>
+dumpfile $FTTEMPDIR/fortunes
 
 # E4 (2 point) Use the tool json_pp to print nicely the 
 # fortunes file and save it as $FTTEMPDIR/fortunes_pp

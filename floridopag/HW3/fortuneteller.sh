@@ -159,10 +159,12 @@ dumpfile $FTTEMPDIR/fortunes
 # (hint: use cat and the pipe | to pass input to json_pp, and use 
 # the redirector > to write the output of the commands to a file.)
 #<YOUR CODE HERE>
+cat $FTTEMPDIR/fortunes|json_pp -f json -t json > $FTTEMPDIR/fortunes_pp
 
 # E5 (1 points)
 # use the dumpfile function to print the content of the fortunes_pp file.
 #<YOUR CODE HERE>
+dumpfile $FTTEMPDIR/fortunes_pp
 
 # E6 (2 points) exit with 0 if --printinfo specified.
 # cleanup if --cleanup is specified.
@@ -172,10 +174,22 @@ dumpfile $FTTEMPDIR/fortunes
 # To write this you can take inspiration in the IF statements in the
 # helper functions at the beginning of this file.
 #<YOUR CODE HERE>
+	if [[ "${PRINTINFO}x" == "--printinfox" ]]; then
+        echo -e "\nExiting becasuse --printinfo specified"
+        exit 0
+	fi
+	
+	if [[ "${CLEANUP}x" == "--cleanupx" ]]; then
+          echo "cleaning temporary folders..."
+          rm -r $FTTEMPDIR
+          exit 0
+	fi
 
 # E7 (1 point)
 # Extract only the lines containing "message" and save them as $FTTEMPDIR/fortunes_messages
 #<YOUR CODE HERE>
+grep message $FTTEMPDIR/fortunes_pp > $FTTEMPDIR/fortunes_messages
+cat $FTTEMPDIR/fortunes_messages
 
 # E8 (2 points) calculate the number of lines in the fortunes_messages file
 # and store it in a variable NUMMSG

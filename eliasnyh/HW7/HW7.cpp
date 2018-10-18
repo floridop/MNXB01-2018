@@ -2,7 +2,7 @@
 
 // Learning outcomes: pointers and passing by a value, reference or pointer
 
-// Time spent on this homework: 45 min
+// Time spent on this homework: 2 hours
 //
 // Collaborators: None
 
@@ -45,10 +45,13 @@ void convertToUpperCase(char *strPtr)
   // Modify so that the function converts lowercase letters to uppercase letters.  
   // You may find this helpful: http://www.cplusplus.com/reference/cctype/
 
+int i = 0;
 
-   cout << "Inside convert func" << endl << "strPtr = " << strPtr << endl << "*strPtr = " << *strPtr << endl << "&strPtr = " << &strPtr << endl << "*&strPtr = " << *&strPtr << endl << "strPtr[2] = " << strPtr[2] << endl << "&strPtr[2] = " << &strPtr[2] << endl << "&*&strPtr[2] = " << &*&strPtr[2] << endl;
-
-  
+while(strPtr[i])
+{
+	*(strPtr + i) = toupper(strPtr[i]); 
+	i++;
+}
 
 } 
 

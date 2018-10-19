@@ -1,8 +1,8 @@
 #include <iostream>
 #include "triangle.h"
 #include "rectangle.h"
-//#include "square.h" //Uncomment these as you implement the classes
-//#include "circle.h"
+#include "square.h" //Uncomment these as you implement the classes
+#include "circle.h"
 using namespace std;
 
 bool isBigEnough(shape& obj) {
@@ -30,17 +30,17 @@ int main() {
 	cout << "It is" << (isBigEnough(rec) ? "" : " NOT") << " big enough!" << endl << endl;
 	
 	//Uncomment these blocks as you implement the classes
-	//square sq(5.);
-	//sq.setSide(7.);
-	//cout << "Square properties:" << endl << "Side " << sq.getSide() << endl;
-	//cout << "Area " << sq.area() << endl << "Circumference " << sq.circumference() << endl;
-	//cout << "It is" << (isBigEnough(sq) ? "" : " NOT") << " big enough!" << endl << endl;
+	square sq(5.);
+	sq.setSide(7.);
+	cout << "Square properties:" << endl << "Side " << sq.getSide() << endl;
+	cout << "Area " << sq.area() << endl << "Circumference " << sq.circumference() << endl;
+	cout << "It is" << (isBigEnough(sq) ? "" : " NOT") << " big enough!" << endl << endl;
 
-	//circle circ(10.);
-	//circ.setRadius(5.);
-	//cout << "Circle properties:" << endl << "Radius " << circ.getRadius() << endl;
-	//cout << "Area " << circ.area() << endl << "Circumference " << circ.circumference() << endl;
-	//cout << "It is" << (isBigEnough(circ) ? "" : " NOT") << " big enough!" << endl << endl;
+	circle circ(10.);
+	circ.setRadius(5.);
+	cout << "Circle properties:" << endl << "Radius " << circ.getRadius() << endl;
+	cout << "Area " << circ.area() << endl << "Circumference " << circ.circumference() << endl;
+	cout << "It is" << (isBigEnough(circ) ? "" : " NOT") << " big enough!" << endl << endl;
 	
 	return 0;
 }

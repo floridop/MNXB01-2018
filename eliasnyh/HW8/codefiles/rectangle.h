@@ -8,6 +8,7 @@ class rectangle : public shape {
 	rectangle(double base = 0., double height = 0.);
 	~rectangle();
 	double area() { return base_*height_; }
+	double circumference() { return 2*(base_ + height_) ; }
 };
 
 #endif

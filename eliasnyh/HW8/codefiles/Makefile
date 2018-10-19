@@ -37,11 +37,14 @@ LDFLAGS = -ggdb
 #LIBS = 
 
 # Here we will put the names of the shape source and object files.
-SHAPESRC = shape.cpp triangle.cpp rectangle.cpp 
+SHAPESRC = shape.cpp triangle.cpp rectangle.cpp
 SHAPEOBJ = $(SHAPESRC:.cpp=.o)
 
+NEWSHAPESRC = shape.cpp triangle.cpp rectangle.cpp circle.cpp square.cpp
+NEWSHAPEOBJ = $(NEWSHAPESRC:..cpp=.o)
+
 # The names of the executables
-PROGS = defaultTest
+PROGS = defaultTest newTest
 
 # This is a rule stating that the target "all" depends on whatever is 
 # in the variable PROGS. Typing "make all" builds all of the PROGS. 
@@ -59,6 +62,9 @@ all: $(PROGS)
 # g++ -o defaultTest defaultTest.o shape.o triangle.o rectangle.o ...
 #
 defaultTest: defaultTest.o $(SHAPEOBJ)
+	$(CXX) -o $@ $^ $(CXXFLAGS) $(CPPFLAGS) $(LIBS)
+	
+newTest: newTest.o $(NEWSHAPEOBJ)
 	$(CXX) -o $@ $^ $(CXXFLAGS) $(CPPFLAGS) $(LIBS)
 
 # This is a rule for cleaning up the file created when building the

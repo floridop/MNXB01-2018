@@ -12,6 +12,7 @@ class shape { //This class has the common characteristics of triangles and recta
 	double getHeight() { return height_; }
 	void setBase(double base) { base_ = fabs(base); }
 	void setHeight(double height) { height_ = fabs(height); }
+	double circumference() { return 1; }
 	
 	protected: //Protected members can be accessed by this and whatever inherits from this
 	double base_;

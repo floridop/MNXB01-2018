@@ -19,16 +19,17 @@
 
 
 #
-# Student: Safi Rafie-Zinedine
+# Student: YOUR_NAME_HERE
 #
 
 # E0 (1 point) 
 # inspect the website http://fortunecookieapi.herokuapp.com/
 # and understand the format of the data that the API returns
 # at http://fortunecookieapi.herokuapp.com/v1/fortunes
-# understand what kind of data structure the website returns and write it here:
+# understand what kind of data structure teh website returns and write it here:
 #
-# Data structure format is an array of objects in JSON data format.
+# Datastructure format is ____________________
+
 
 ###### DO NOT TOUCH THE CODE BELOW #####################################
 
@@ -40,7 +41,9 @@ SCRIPTNAME=$0
 
 # Read options using GNU getopt.
 # see info at 
-#  - http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-getopt
+#  - 
+http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-
+getopt
 #  - https://dustymabe.com/2013/05/17/easy-getopt-for-a-bash-script/
 OPTS=`getopt -o h --long help,printinfo,cleanup -n $SCRIPTNAME -- "$@"`
 
@@ -49,8 +52,10 @@ usage() {
       echo
       echo "usage:"
       echo " $0 [--printinfo|--cleanup|-h|--help]"
-      echo -e "\t--printinfo     prints the contents of intermediate fortune files and exits"
-      echo -e "\t--cleanup       delete temporary files and ask the user for each of them"
+      echo -e "\t--printinfo     prints the contents of intermediate fortune 
+files and exits"
+      echo -e "\t--cleanup       delete temporary files and ask the user for 
+each of them"
       echo -e "\t-h     this help"
 }
 
@@ -136,8 +141,7 @@ cleanup() {
 # make sure the directory is created in /tmp and is called ftellerXXX
 # where XXX are random characters created by mktemp. Read mktemp
 # documentation to understand more.
-FTTEMPDIR=`mktemp -d /tmp/ftellerXXX`
-#echo $FTTEMPDIR
+#<YOUR CODE HERE>
 
 # E2 (1 point)
 # Download the database of fortunes from the URL
@@ -145,28 +149,21 @@ FTTEMPDIR=`mktemp -d /tmp/ftellerXXX`
 # using the wget command.
 # save it into FTTEMPDIR
 # make sure the output of wget is not visible to the user.
-wget -P $FTTEMPDIR http://fortunecookieapi.herokuapp.com/v1/fortunes &>/dev/null
+#<YOUR CODE HERE>
 
 # E3 (1 point)
 # use the dumpfile function to print the content of the fortunes file.
-# print option is --printinfo
-dumpfile $FTTEMPDIR/fortunes
-
-#fortuneteller.sh
-#./fortuneteller.sh --printinfo
-#./fortuneteller.sh --cleanup
+#<YOUR CODE HERE>
 
 # E4 (2 point) Use the tool json_pp to print nicely the 
 # fortunes file and save it as $FTTEMPDIR/fortunes_pp
 # (hint: use cat and the pipe | to pass input to json_pp, and use 
 # the redirector > to write the output of the commands to a file.)
-cat $FTTEMPDIR/fortunes | json_pp > $FTTEMPDIR/fortunes_pp
-
+#<YOUR CODE HERE>
 
 # E5 (1 points)
 # use the dumpfile function to print the content of the fortunes_pp file.
-dumpfile $FTTEMPDIR/fortunes_pp
-
+#<YOUR CODE HERE>
 
 # E6 (2 points) exit with 0 if --printinfo specified.
 # cleanup if --cleanup is specified.
@@ -175,49 +172,40 @@ dumpfile $FTTEMPDIR/fortunes_pp
 # call the cleanup function to delete the temporary files.
 # To write this you can take inspiration in the IF statements in the
 # helper functions at the beginning of this file.
-if [[ "${PRINTINFO}" == "--printinfo" ]]; then
-    echo "Exiting because --printinfo specified"
-    exit 0
-elif [[ "${CLEANUP}" == "--cleanup" ]]; then
-    cleanup $FTTEMPDIR
-fi
-
+#<YOUR CODE HERE>
 
 # E7 (1 point)
-# Extract only the lines containing "message" and save them as $FTTEMPDIR/fortunes_messages
-grep "message" $FTTEMPDIR/fortunes_pp > $FTTEMPDIR/fortunes_messages
-
+# Extract only the lines containing "message" and save them as 
+$FTTEMPDIR/fortunes_messages
+#<YOUR CODE HERE>
 
 # E8 (2 points) calculate the number of lines in the fortunes_messages file
 # and store it in a variable NUMMSG
 # hint: use the command wc, the pipe and a tool called "cut"
 # see cut examples here:
 # https://www.thegeekstuff.com/2013/06/cut-command-examples
-NUMMSG=`cut -c1 $FTTEMPDIR/fortunes_messages | wc -l`
-#echo $NUMMSG
+#<YOUR CODE HERE>
 
 # E9 (2 points)
 # pick a random number between 1 and NUMMSG and save it into the variable
 # CHOSEN
 # use the predefined variable RANDOM and the bc command. For hints see:
 # https://coderwall.com/p/s2ttyg/random-number-generator-in-bash
-CHOSEN=`echo $(($RANDOM%$NUMMSG + 1)) | bc`
-#echo $CHOSEN
+#<YOUR CODE HERE>
 
 #E10 (2 points)
 # Pick the CHOSEN message from the list and print it on screen
 # use head and tail to achieve this. Search on the internet:
 # "print by line number using bash"
 # put the message in a variable called MESSAGE
-MESSAGE=`head -n $CHOSEN $FTTEMPDIR/fortunes_messages | tail -n 1`
+#<YOUR CODE HERE>
 
 # E11 (1 point) extract only the message content using cut
-MESSAGE=`head -n $CHOSEN $FTTEMPDIR/fortunes_messages | tail -n 1` | cut -d':' -f2
+#<YOUR CODE HERE>
 
 # E12 (1 point) Use echo -e to print spaces and newlines to show the 
 # output as in the simple_call_output file
-#echo -e "\n${MESSAGE%\"}\n" | tr -d '"' | cut -d':' -f2
-echo -e '\n'$MESSAGE'\n' | tr "\"" "\t" | cut -d':' -f2
- 
+#<YOUR CODE HERE>
+
 # calling cleanup to clean the tmp folder
-cleanup $FTTEMPDIR
+cleanup $FTTEMPDIR 

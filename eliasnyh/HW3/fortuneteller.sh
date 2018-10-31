@@ -181,7 +181,7 @@ dumpfile ${FTTEMPDIR}/fortunes_pp
 #<YOUR CODE HERE>
 
 if [[ "${PRINTINFO}x" == "--printinfox" ]]; then
-	echo "\nExiting because --printinfo specified"
+	echo "Exiting because --printinfo specified"
 	cleanup ${FTTEMPDIR}
 	exit 0
 fi

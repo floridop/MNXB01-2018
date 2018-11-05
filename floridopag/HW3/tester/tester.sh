@@ -32,10 +32,27 @@ runwithopts() {
   echo $EXT
   $SRUN $OPTION1 $OPTION2 &> output$EXT
   RESULT=$?
-  if [[ $? != 0 ]];  then
+  if [[ $RESULT != 0 ]];  then
      echo "Problems in output$EXT"
   fi
 }
+
+# usage file1 file2 outputfile
+dodiffs() {
+  HEREFILE=$1
+  RESULTFILE=$2
+  OUTPUTDIFF=$3
+
+  diff ${HEREFILE} ${THISFOLDER}/../result/${RESULTFILE} &> ${OUTPUTDIFF}
+
+  RESULT=$?
+  if [[ $RESULT != 0 ]];  then
+     echo "Problems in diff ${OUTPUTDIFF}"
+  fi
+
+
+}
+
 
 runwithopts .noopt 
 
@@ -46,3 +63,8 @@ runwithopts .printinfo --printinfo
 runwithopts .printnclean --printinfo --cleanup
 
 # do diffs
+
+dodiffs output.noopt simple_call_output noopt.diff
+dodiffs output.cleanup call_with_cleanup_output cleanup.diff
+dodiffs output.printinfo call_with_printinfo_output printinfo.diff
+

@@ -1,0 +1,9 @@
+
+        Don't blow your own trumpet.
+
+cleaning temporary folders...
+rm: descend into directory ‘/tmp/ftellerCxf’? y
+rm: remove regular file ‘/tmp/ftellerCxf/fortunes_pp’? y
+rm: remove regular file ‘/tmp/ftellerCxf/fortunes’? y
+rm: remove regular file ‘/tmp/ftellerCxf/fortunes_messages’? y
+rm: remove directory ‘/tmp/ftellerCxf’? y

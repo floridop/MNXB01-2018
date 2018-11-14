@@ -9,6 +9,8 @@ THISFOLDER=`pwd`
 USERNAME=$1
 ESCRIPT='fortuneteller.sh'
 SRUN=${THISFOLDER}/../../../${USERNAME}/HW3/${ESCRIPT}
+# fix for calleahl
+#SRUN=${THISFOLDER}/../../../${USERNAME}/${ESCRIPT}
 
 if [[ -z $SRUN ]]; then
    echo "missing filename $SRUN"

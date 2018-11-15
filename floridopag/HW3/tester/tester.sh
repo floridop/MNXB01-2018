@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # Tester code for MNXB01-2018
 # usage 
@@ -11,6 +11,9 @@ ESCRIPT='fortuneteller.sh'
 SRUN=${THISFOLDER}/../../../${USERNAME}/HW3/${ESCRIPT}
 # fix for calleahl
 #SRUN=${THISFOLDER}/../../../${USERNAME}/${ESCRIPT}
+# fix for alexwyk
+#SRUN=${THISFOLDER}/../../../${USERNAME}/hw3/${ESCRIPT}
+
 
 if [[ -z $SRUN ]]; then
    echo "missing filename $SRUN"

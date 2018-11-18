@@ -1,0 +1,9 @@
+ 21:29:12 up 145 days,  4:18,  0 users,  load average: 0.01, 0.01, 0.00
+Filesystem         1K-blocks      Used Available Use% Mounted on
+/dev/sda3           20027260   4436376  14566884  24% /
+tmpfs               32983228        16  32983212   1% /dev/shm
+/dev/sda5          103621880   4530456  93821000   5% /tmp
+/dev/sdb1          240232960   6853948 221169144   4% /slurmtmp
+/dev/sda2           51175000   5242724  45932276  11% /var/lib/cvmfs
+10.16.0.200:/users 838860800 784002048  54858752  94% /nfs/users
+27 /etc/passwd [32 /usr/bin/yum]

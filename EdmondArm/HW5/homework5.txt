@@ -1,0 +1,13 @@
+pptest-iridium.lunarc.lu.se
+ 21:13:07 up 145 days,  3:56,  4 users,  load average: 0.10, 0.05, 0.01
+Filesystem            1K-blocks      Used Available Use% Mounted on
+/dev/sda3              20027260   5770500  13232760  31% /
+tmpfs                  32983228        12  32983216   1% /dev/shm
+/dev/sda5             103621880     61044  98290412   1% /opt
+/dev/sdb1             240232960     66832 227956260   1% /tmp
+/dev/sda2              51175000  27714092  23460908  55% /var/lib/cvmfs
+10.16.0.200:/users    838860800 784002048  54858752  94% /nfs/users
+10.16.0.200:/software
+                     1362624512 872305664 490318848  65% /nfs/software
+28 /etc/passwd [32 /usr/bin/yum]
+

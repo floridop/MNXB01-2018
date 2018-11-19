@@ -1,0 +1,74 @@
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ ls -a -l
+total 19
+drwxr-x---.  9 ed0563ar-s ppguests 4096 Nov 18 21:26 [0m[01;34m.[0m
+drwxr-x---. 63 root       ppguests 4096 Sep 19 19:01 [01;34m..[0m
+-rw-------.  1 ed0563ar-s ppguests 1271 Nov 18 21:23 .bash_history
+-rwxr-x---.  1 ed0563ar-s ppguests   18 Sep 19 18:58 [01;32m.bash_logout[0m
+-rwxr-x---.  1 ed0563ar-s ppguests  176 Sep 19 18:58 [01;32m.bash_profile[0m
+-rwxr-x---.  1 ed0563ar-s ppguests  124 Sep 19 18:58 [01;32m.bashrc[0m
+drwxr-x--x.  4 ed0563ar-s ppguests   32 Nov 11 14:15 [01;34m.cache[0m
+drwx------.  4 ed0563ar-s ppguests   34 Nov 11 14:19 [01;34m.config[0m
+drwx------.  3 ed0563ar-s ppguests   58 Nov 11 14:22 [01;34mDownloads[0m
+drwxr-xr-x.  2 ed0563ar-s ppguests 4096 Nov 11 14:15 [01;34m.fontconfig[0m
+drwxr-x--x.  3 ed0563ar-s ppguests   18 Nov 11 13:50 [01;34m.gnome2[0m
+-rwxr-x--x.  1 ed0563ar-s ppguests  134 Nov 18 21:10 [01;32mhomework5.sh[0m
+-rw-r-----.  1 ed0563ar-s ppguests  684 Nov 18 21:14 homework5.txt
+drwxr-x--x.  3 ed0563ar-s ppguests   18 Nov 11 14:18 [01;34m.local[0m
+drwx------.  5 ed0563ar-s ppguests   63 Nov 11 14:15 [01;34m.mozilla[0m
+-rw-r-----.  1 ed0563ar-s ppguests   80 Nov 11 14:07 myscript
+-rw-r-----.  1 ed0563ar-s ppguests   99 Nov 11 14:05 myscript.sh
+-rw-r-----.  1 ed0563ar-s ppguests  150 Nov 18 21:03 .nfs00000000815ada9400000485
+-rw-r-----.  1 ed0563ar-s ppguests    0 Nov 18 21:26 screenlog.0
+-rw-------.  1 ed0563ar-s ppguests  508 Nov 11 13:36 .viminfo
+-rw-------.  1 ed0563ar-s ppguests   73 Nov 18 20:16 .Xauthority
+[m]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ sbatch -N4 homework5.sh
+Submitted batch job 1535
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ cat slurm-1535.txt
+cat: slurm-1535.txt: No such file or directory
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ cat slurm-1535.txt[K[K[Kout
+ 21:29:12 up 145 days,  4:18,  0 users,  load average: 0.01, 0.01, 0.00
+Filesystem         1K-blocks      Used Available Use% Mounted on
+/dev/sda3           20027260   4436376  14566884  24% /
+tmpfs               32983228        16  32983212   1% /dev/shm
+/dev/sda5          103621880   4530456  93821000   5% /tmp
+/dev/sdb1          240232960   6853948 221169144   4% /slurmtmp
+/dev/sda2           51175000   5242724  45932276  11% /var/lib/cvmfs
+10.16.0.200:/users 838860800 784002048  54858752  94% /nfs/users
+27 /etc/passwd [32 /usr/bin/yum]
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+              1535      long homework ed0563ar  R       1:36      4 n[6-9]
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+short        up 1-00:00:00      3   idle n[3-5]
+long*        up 7-00:00:00      7   idle n[6-12]
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ c[Kscontrol show job 1535
+JobId=1535 JobName=homework5.sh
+   UserId=ed0563ar-s(35952) GroupId=ppguests(46300) MCS_label=N/A
+   Priority=1 Nice=0 Account=(null) QOS=(null)
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:02:00 TimeLimit=7-00:00:00 TimeMin=N/A
+   SubmitTime=2018-11-18T21:29:12 EligibleTime=2018-11-18T21:29:12
+   StartTime=2018-11-18T21:29:12 EndTime=2018-11-18T21:31:12 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=long AllocNode:Sid=pptest-iridium:32396
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=n[6-9]
+   BatchHost=n6
+   NumNodes=4 NumCPUs=4 NumTasks=0 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=4,node=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   Gres=(null) Reservation=(null)
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/nfs/users/ppguests/ed0563ar-s/homework5.sh
+   WorkDir=/nfs/users/ppguests/ed0563ar-s
+   StdErr=/nfs/users/ppguests/ed0563ar-s/slurm-1535.out
+   StdIn=/dev/null
+   StdOut=/nfs/users/ppguests/ed0563ar-s/slurm-1535.out
+   Power=
+
+]0;ed0563ar-s@pptest-iridium:~\[ed0563ar-s@pptest-iridium ~]$ exit
+exit
